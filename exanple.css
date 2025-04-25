@@ -1,0 +1,547 @@
+
+.desktop{
+    visibility: hidden;
+}
+.mobile{
+    visibility: visible;
+
+}
+
+/* General styles */
+
+body {
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d5e6d4;
+}
+
+/* Top Section for Login and Sign In buttons */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    
+    cursor: pointer;
+    background-color: #d3d7db;
+    color: #000;
+}
+
+.btn:hover {
+    background-color: #c1c5c9;
+}
+
+.login {
+    background-color: #d1d9de;
+}
+
+.signup {
+    background-color: #c0c8cd;
+}
+
+/* Rectangular Navbar Section */
+.navbar {
+    position: fixed;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9bcd87;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 20px;
+    margin-top: 10px; /* Space below the login section */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styles */
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Navigation icons container */
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon1{
+    position:relative;
+    width: 28px;
+    top:7px;
+}
+
+.icon2{
+    position:relative;
+    width: 35px;
+    top:2px;
+    left: 6px;
+    
+}
+
+.icon3{
+    position:relative;
+    width: 36px;
+    top:2px;
+    left: 6px;
+    
+}
+
+.icon4{
+    position:relative;
+    width: 45px;
+    top:-1px;
+    left: 6px;
+    
+}
+
+.icon5{
+    position:relative;
+    width: 45px;
+    top:2px;
+    left: 6px;
+    
+}
+
+
+
+
+
+/* Individual icon container */
+.icon-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon-container .icon {
+    width: 40px;
+    height: auto;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #5e6b5d;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.icon-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.box1{
+    position: absolute;
+    left:7.5%;
+    top:17%;
+    width: 85%;
+    height: 100%;
+    background-color:rgb(127, 156, 125);
+    z-index: -2;
+}
+
+.box2{
+    position: absolute;
+    left:7.5%;
+    top:10%;
+    width: 85%;
+    height: 20%;
+    background-color:#cce6ca;
+    z-index: -2;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.FAQ{
+    position: absolute;
+    top:-85px;
+
+
+}
+
+
+
+
+
+
+
+
+
+@media(min-width:768px){
+    .desktop{
+        visibility: visible;
+    }
+
+    .mobile{
+        visibility: hidden;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between; /* Space between left and right menus */
+        height: 100vh;
+        align-items: center; /* Vertically center menus */
+    }
+    
+    
+    ul {
+        position:absolute;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 60px; 
+        height: 100%;
+        background-color: #9bcd87;
+        border-radius: 10px;
+    }
+    
+    li {
+        position: relative; 
+        border-bottom: 1px solid #bbb;
+    }
+    
+    li:last-child {
+        border-bottom: none;
+    }
+    
+    li a {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        padding: 20px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+        background-color: #5b8850;
+    }
+    
+    .active {
+        background-color: #6d9369;
+    }
+    
+    /* Tooltip styling */
+    .tooltip {
+        visibility: hidden;
+        width: 150px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        left: 130%; 
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    /* Show tooltip on hover */
+    li:hover .tooltip {
+        visibility: visible;
+        opacity: 3;
+    }
+    
+    .left-menu {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        height:650px;
+        transform: translateY(-50%);
+    }
+    
+    /* Positioning for right menu */
+    .right-menu {
+        position: absolute;
+        top: 30%;
+        right: 20px;
+        height:360px;
+        transform: translateY(-50%);
+    
+    }
+    
+    .rightdown-menu{
+        position: absolute;
+        top: 78%;
+        right: 20px;
+        height:250px;
+        transform: translateY(-50%);
+    
+    
+    }
+    .tooltipright {
+        visibility: hidden;
+        width: 150px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        left: -300%; 
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    li:hover .tooltipright {
+        visibility: visible;
+        opacity: 3;
+    }
+    
+    
+    
+    
+    .icon1 {
+        position: relative;
+        left:-12px;
+        width: 60px;
+        height: auto;
+    
+    }
+    
+    .icon2 {
+        position: relative;
+        left:-10px;
+        width: 50px;
+        height: auto;
+    
+    }
+    
+    .icon3 {
+        position: relative;
+        left:-4px;
+        width: 38px;
+        height: auto;
+    
+    }
+    
+    .icon4 {
+        position: relative;
+        left:0px;
+        width: 27px;
+        height: auto;
+    
+    }
+    
+    .icon5 {
+        position: relative;
+        left:-2px;
+        width: 35px;
+        height: auto;
+    
+    }
+    
+    .icon6 {
+        position: relative;
+        left:-5px;
+        width: 40px;
+        height: auto;
+    
+    }
+    
+    .icon7 {
+        position: relative;
+        left:-1px;
+        width: 30px;
+        height: auto;
+    
+    }
+    
+    .icon7 {
+        position: relative;
+        left:-1px;
+        width: 30px;
+        height: auto;
+    
+    }
+    
+    .icon7 {
+        position: relative;
+        left:-1px;
+        width: 30px;
+        height: auto;
+    
+    }
+    
+    .icon8 {
+        position: relative;
+        left:-15px;
+        top:-2px;
+        width: 50px;
+        height: auto;
+    
+    }
+    
+    .icon9 {
+        position: relative;
+        left:-2px;
+        width: 30px;
+        height: auto;
+    
+    }
+    
+    .icon10 {
+        position: relative;
+        left:-12px;
+        width: 50px;
+        height: auto;
+    
+    }
+    
+    .icon11 {
+        position: relative;
+        left:-8px;
+        width: 40px;
+        height: auto;
+    
+    }
+    
+    .box1{
+        position: absolute;
+        left:7.5%;
+        top:5%;
+        width: 85%;
+        height: 100%;
+        background-color:rgb(127, 156, 125);
+        z-index: -2;
+    }
+    
+    .box2{
+        position: absolute;
+        left:40%;
+        top:12%;
+        width:50%;
+        height:80%;
+        background-color: rgb(179, 190, 178);
+        z-index: -1;
+        border-radius: 30px;
+    
+    }
+    
+    
+    
+    .heading{
+        position:absolute;
+        left:12% ;
+        top:8% ;
+        font-size:500% ;
+        width: 20%;
+        height: auto;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        z-index: -1;
+    }
+    
+     body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #cce6ca;
+                color: #222222;
+            }
+    .faq-section {
+                position: relative;
+                left:-28%;
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 30px;
+                background: #d5e6d4;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+    .faq {
+                border-bottom: 1px solid #85b08b;
+            }
+    .faq:last-child {
+                border-bottom: none;
+            }
+    .faq-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                cursor: pointer;
+                background: #b9d4bc;
+                border-radius: 6px;
+                margin-bottom: 10px;
+                transition:  0.3s;
+            }
+    .faq-header:hover {
+                background: #9bc0a4;
+            }
+    .faq-header h3 {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+    .faq-header span {
+                font-size: 1.5rem;
+                transition: transform 0.3s;
+            }
+    .faq-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                background: #f1fbf0;
+                padding: 0 15px;
+                border-left: 3px solid #284d29;
+            }
+     .faq-content p {
+                margin: 10px 0;
+                line-height: 1.6;
+            }
+    .faq.open .faq-content {
+                max-height: 200px;
+            }
+    .faq.open .faq-header span {
+                transform: rotate(45deg);
+            }
+    
+    .image1{
+        position: absolute;
+        left:40%;
+        top:12%;
+        width:50%;
+        height:auto;
+        z-index: -1;
+    }
+    
+    .image2{
+        position: absolute;
+        left:7.5%;
+        top:6%;
+        width:85%;
+        height:auto;
+        z-index: -1;
+    }
+}

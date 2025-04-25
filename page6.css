@@ -1,0 +1,649 @@
+     
+.desktop{
+    visibility: hidden;
+}
+.mobile{
+    visibility: visible;
+
+}
+
+/* General styles */
+
+body {
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d5e6d4;
+}
+
+/* Top Section for Login and Sign In buttons */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    
+    cursor: pointer;
+    background-color: #d3d7db;
+    color: #000;
+}
+
+.btn:hover {
+    background-color: #c1c5c9;
+}
+
+.login {
+    background-color: #d1d9de;
+}
+
+.signup {
+    background-color: #c0c8cd;
+}
+
+/* Rectangular Navbar Section */
+.navbar {
+    position: fixed;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9bcd87;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 20px;
+    margin-top: 10px; /* Space below the login section */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styles */
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Navigation icons container */
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon1{
+    position:relative;
+    width: 28px;
+    top:7px;
+}
+
+.icon2{
+    position:relative;
+    width: 35px;
+    top:2px;
+    left: 6px;
+    
+}
+
+.icon3{
+    position:relative;
+    width: 36px;
+    top:2px;
+    left: 6px;
+    
+}
+
+.icon4{
+    position:relative;
+    width: 45px;
+    top:-1px;
+    left: 6px;
+    
+}
+
+.icon5{
+    position:relative;
+    width: 45px;
+    top:2px;
+    left: 6px;
+    
+}
+
+
+
+
+
+/* Individual icon container */
+.icon-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon-container .icon {
+    width: 40px;
+    height: auto;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #5e6b5d;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.icon-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.box1{
+    position: absolute;
+    left:7.5%;
+    top:17%;
+    width: 85%;
+    height: 500%;
+    background-color:rgb(127, 156, 125);
+    z-index: -2;
+}
+
+.box2{
+    position: absolute;
+    left:7.5%;
+    top:10%;
+    width: 85%;
+    height: 20%;
+    background-color:#cce6ca;
+    z-index: -2;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.FAQ{
+    position: absolute;
+    top:-85px;
+
+
+}
+
+
+@media(min-width:768px){
+    .desktop{
+        visibility: visible;
+    }
+    .mobile{
+        visibility: hidden;
+    
+    }
+
+     body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between; /* Space between left and right menus */
+            height: 100vh;
+            align-items: center; /* Vertically center menus */
+        }
+
+
+        ul {
+            position:absolute;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 60px; 
+            height: 100%;
+            background-color: #9bcd87;
+            border-radius: 10px;
+        }
+
+        li {
+            position: relative; 
+            border-bottom: 1px solid #bbb;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: left;
+            padding: 20px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #5b8850;
+        }
+
+        .active {
+            background-color: #6d9369;
+        }
+
+        /* Tooltip styling */
+        .tooltip {
+            visibility: hidden;
+            width: 150px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            left: 130%; 
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Show tooltip on hover */
+        li:hover .tooltip {
+            visibility: visible;
+            opacity: 3;
+        }
+
+        .left-menu {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            height:650px;
+            transform: translateY(-50%);
+        }
+
+        /* Positioning for right menu */
+        .right-menu {
+            position: fixed;
+            top: 30%;
+            right: 20px;
+            height:360px;
+            transform: translateY(-50%);
+
+        }
+
+        .rightdown-menu{
+            position: fixed;
+            top: 78%;
+            right: 20px;
+            height:250px;
+            transform: translateY(-50%);
+
+
+        }
+        .tooltipright {
+            visibility: hidden;
+            width: 150px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            left: -300%; 
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        li:hover .tooltipright {
+            visibility: visible;
+            opacity: 3;
+        }
+
+
+        .icon1 {
+            position: relative;
+            left:-12px;
+            width: 60px;
+            height: auto;
+
+        }
+
+        .icon2 {
+            position: relative;
+            left:-10px;
+            width: 50px;
+            height: auto;
+
+        }
+
+        .icon3 {
+            position: relative;
+            left:-4px;
+            width: 38px;
+            height: auto;
+
+        }
+
+        .icon4 {
+            position: relative;
+            left:0px;
+            width: 27px;
+            height: auto;
+
+        }
+
+        .icon5 {
+            position: relative;
+            left:-2px;
+            width: 35px;
+            height: auto;
+
+        }
+
+        .icon6 {
+            position: relative;
+            left:-5px;
+            width: 40px;
+            height: auto;
+
+        }
+
+        .icon7 {
+            position: relative;
+            left:-1px;
+            width: 30px;
+            height: auto;
+
+        }
+
+        .icon7 {
+            position: relative;
+            left:-1px;
+            width: 30px;
+            height: auto;
+
+        }
+
+        .icon7 {
+            position: relative;
+            left:-1px;
+            width: 30px;
+            height: auto;
+
+        }
+
+        .icon8 {
+            position: relative;
+            left:-35px;
+            top:-2px;
+            width: 100px;
+            height: auto;
+
+        }
+
+        .icon9 {
+            position: relative;
+            left:-2px;
+            width: 30px;
+            height: auto;
+
+        }
+
+        .icon10 {
+            position: relative;
+            left:-12px;
+            width: 50px;
+            height: auto;
+
+        }
+
+        .icon11 {
+            position: relative;
+            left:-8px;
+            width: 40px;
+            height: auto;
+
+        }
+
+        .box1{
+            position: absolute;
+            left:7.5%;
+            top:5%;
+            width: 85%;
+            height: 500%;
+            background-color:rgb(127, 156, 125);
+            z-index: -2;
+        }
+
+        .games-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 4 columns */
+            grid-gap: 10%; /* Space between items */
+            max-width: 1000px; /* Adjust as needed */
+            position: relative;
+            transform:translateX(20.5%) translateY(70%); /* moves the grid to left and down*/
+            z-index: -1;/* Ensure it's on top */
+        }
+
+        .game {
+            position: relative;
+            left: -200%;
+            width:150%; /* Full width of grid cell */
+            aspect-ratio: 2 / 3; /* Maintain consistent aspect ratio */
+            overflow: hidden;
+            cursor: pointer;
+            background-color: #7c8f7a;
+            border-radius: 10px;
+        }
+
+        .game img {
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .game:hover img {
+            transform: scale(1.1); /* Scale the image when hovered */
+        }
+
+        .game-description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: rgba(255, 255, 255, 0.764);
+            padding: 10px;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .game:hover .game-description {
+            opacity: 1;
+            transform: translateY(0); /* Slide in the description when hovered */
+        }
+
+        /* Search Container */
+        .search-container {
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            background-color: #d9e2d3; /* Light gray-green background */
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+
+        /* Search Input */
+        input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #a3b39c; /* Medium gray-green border */
+            border-radius: 10px;
+            background-color: #f0f4f2; /* Very light gray-green background */
+            color: #2f3e2d; /* Dark green text */
+        }
+
+        /* Button */
+        button {
+            padding: 8px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #7c8f7a; /* Gray-green button */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #6b7c65; /* Slightly darker gray-green on hover */
+        }
+
+        /* Popular Games Heading */
+        .PgameW {
+            font-size: 150%;
+            margin-top: 20px;
+            text-align: center;
+            color: #f3ffd4; 
+            text-shadow: #f0f4f2;
+        }
+
+
+        /* Popular Games Heading */
+        .PgameW {
+            position: absolute;
+            left: 11%;
+            top: 10%;
+            font-size: 400%;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+
+        .video{
+            position:absolute;
+            left:10%;
+            top:10%;
+            width:80%;
+            z-index:-1;
+            border-radius:20px;
+        }
+
+        .lolLogo{
+            position:relative;
+            width:30%;
+            z-index: 3;
+            transform: translateX(-40%) translateY(-700%);
+        }
+
+        .box2{
+            position: absolute;
+            left:10%;
+            top:62%;
+            width: 55%;
+            height: 40%;
+            border-radius: 20px;
+            background-color:rgba(126, 126, 126, 0.318);
+            box-shadow: 0 0 30px 15px rgba(98, 98, 98, 0.318);
+            z-index:2;
+        }
+
+        .box3{
+            position: absolute;
+            left:13%;
+            top:70%;
+            width: 55%;
+            height: 40%;
+            font-size: 120%;
+            z-index:2;
+            color: #dcdcdc;
+
+        }
+
+        .box4{
+            position: absolute;
+            left:10%;
+            top:410%;
+            width: 55%;
+            height: 30%;
+            border-radius: 70px;
+            background-color:rgb(62, 79, 59);
+            font-size:300%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:#273126;
+            z-index:2;
+            padding-top: 0px;
+        }
+
+        /* Grid layout */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem; /* Adjust gap between cards */
+        }
+        
+        /* Game card wrapper */
+        .game-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px; /* Rounded corners */
+        }
+  
+  /* Game image styling */
+        .game-image {
+            width: 100%;
+            height: auto;
+            border-radius: 16px; /* Same rounded corners as the container */
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        /* Game tag styling */
+        .game-tag {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6); /* Black with opacity */
+            color: white;
+            font-size: 1.25rem; /* Adjust font size */
+            font-weight: 600;
+            border-radius: 16px; /* Match the card's corners */
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+  
+        /* Hover effect */
+        .game-card:hover .game-image {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+        
+        .game-card:hover .game-tag {
+            opacity: 0; /* Hide the tag on hover */
+        }
+        
+        }

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="exanple.css" class="css">
+</head>
+
+<body>
+    <section class="mobile">
+    <main>
+        <nav>
+            <!-- Top Section for Login/Sign In -->
+            <div class="auth-buttons">
+                <button class="btn login">Log In</button>
+                <button class="btn signup">Sign In</button>
+            </div>
+    
+            <!-- Rectangular Navbar Section -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <!-- About Us -->
+                    <a href="about.html" class="icon-container">
+                        <img src="FA&Q.png" alt="About Us" class="icon1">
+                        <span class="tooltip">About us</span>
+                    </a>
+                    <!-- Features -->
+                    <a href="features.html" class="icon-container">
+                        <img src="games.png" alt="Features" class="icon2">
+                        <span class="tooltip">Features</span>
+                    </a>
+                    <!-- Chat -->
+                    <a href="chat.html" class="icon-container">
+                        <img src="message.png" alt="Chat" class="icon3">
+                        <span class="tooltip">Chat</span>
+                    </a>
+                    <!-- Home -->
+                    <a href="index.html" class="icon-container">
+                        <img src="home-icon.png" alt="Home" class="icon4">
+                        <span class="tooltip">Home</span>
+                    </a>
+                    <!-- Profile -->
+                    <a href="profile.html" class="icon-container">
+                        <img src="pfp.png" alt="Profile" class="icon5">
+                        <span class="tooltip">Profile</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="box1">
+                <div class="box2">
+                    <p>Elephants are the largest land mammals on earth and have distinctly massive bodies,
+                         large ears, and long trunks. They use their trunks to pick up
+                         objects, trumpet warnings, greet other elephants
+                    </p>
+
+                    <h1 class="FAQ">Frequetnly Asked Question</h1>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <section class="desktop">
+        <header>
+            <ul class="left-menu">
+                <li>
+                    <a class="active" href="index1.html"><img src="logo.png" alt="Home" class="icon1"></a>
+                    <span class="tooltip">Profile</span>
+                </li>
+                <li>
+                    <a href="index1.html"><img src="home-icon.png" alt="Home" class="icon2"></a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="page3.html"><img src="message.png" alt="Home" class="icon3"></a>
+                    <span class="tooltip">Queries</span>
+                </li>
+                <li>
+    
+                    <a href="page3.html"><img src="FA&Q.png" alt="Home" class="icon4"></a>
+                    <span class="tooltip">FAQ</span>
+                </li>
+                <li>
+    
+                    <a href="page5.html"><img src="games.png" alt="Home" class="icon5"></a>
+                    <span class="tooltip">Games</span>
+                </li>
+                <li>
+                    <a href="city.html"><img src="pc.png" alt="Home" class="icon6"></a>
+                    <span class="tooltip"> Consoles and Gaming Peripherals</span>
+                </li>
+                <li>
+    
+                    <a href="#about"><img src="plus.png" alt="Home" class="icon7"></a>
+                    <span class="tooltip">more</span>
+                </li>
+            </ul>
+    
+            <ul class="right-menu">
+    
+                <li>
+                    <a href="city.html"><img src="pfp.png" alt="Home" class="icon8"></a>
+                    <span class="tooltipright"> Your profile</span>
+                </li>
+                <li>
+    
+                    <a href="#about"><img src="friends.png" alt="Home" class="icon9"></a>
+                    <span class="tooltipright">Friends</span>
+                </li>
+    
+            </ul>
+    
+            <ul class="rightdown-menu">
+    
+                <li>
+                    <a href="city.html"><img src="cart.png" alt="Home" class="icon10"></a>
+                    <span class="tooltipright"> Cart</span>
+                </li>
+                <li>
+    
+                    <a href="#about"><img src="sales.png" alt="Home" class="icon11"></a>
+                    <span class="tooltipright">Sales</span>
+                </li>
+    
+            </ul>
+    
+        </header>
+    
+        <main>
+            <section>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <h1 class="heading"> Frequently Asked Questions</h1>
+            </section>
+    
+            <section>
+                <div class="faq-section">
+                    <div class="faq">
+                        <div class="faq-header">
+                            <h3>What is this FAQ section about?</h3>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-content">
+                            <p>This section provides answers to common questions in a modern, user-friendly way.</p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-header">
+                            <h3>How does the collapsible feature work?</h3>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-content">
+                            <p>The content expands when you click on the question and collapses when you click again.</p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-header">
+                            <h3>Can I customize this design?</h3>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-content">
+                            <p>Yes, you can easily change the styles, colors, and animations in the CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    document.querySelectorAll('.faq-header').forEach(header => {
+                        header.addEventListener('click', () => {
+                            const faq = header.parentElement;
+                            faq.classList.toggle('open');
+                        });
+                    });  
+                </script>
+    
+            </section>
+    
+            <section>
+                <img class="image1" src="patternpage4.png" alt="Responsive Image" >
+                <img class="image2" src="pattern2page4.png" alt="Responsive Image" >
+            </section>
+    
+    </section>
+    </main>
+    
+</body>
+</html>

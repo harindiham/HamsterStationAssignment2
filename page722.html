@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Display</title>
+    <style>
+        body {
+            background-color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 220px;
+            display: inline-block;
+            margin: 20px;
+            position: relative;
+            vertical-align: top;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .img2 img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .hover-info {
+            margin-top: 10px;
+        }
+
+        .product-title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+            margin: 8px 0;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #e66b00;
+            margin: 5px 0;
+        }
+
+        .product-rating {
+            font-size: 0.9rem;
+            color: #444;
+            margin: 5px 0;
+        }
+
+        .product-brand {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .product-brand span {
+            font-weight: bold;
+        }
+
+        .cart-btn {
+            background-color: #ff9000;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-card">
+        <div class="img2">
+            <img src="processor2..png" alt="K68 Wireless Keyboard">
+        </div>
+        <div class="hover-info">
+            <p class="product-title">K68 60% Wireless Mechanical Keyboard</p>
+            <p class="product-price">LKR 8,139.34</p>
+            <div class="product-rating">★★★★☆ <span>(105)</span></div>
+            <p class="product-brand">Brand: <span>ZIYOULANG</span></p>
+        </div>
+        <button class="cart-btn">🛒</button>
+    </div>
+
+    <div class="product-card">
+        <div class="img2">
+            <img src="processor3.png" alt="Ryzen Processor">
+        </div>
+        <div class="hover-info">
+            <p class="product-title">AMD Ryzen 5 5600X Processor</p>
+            <p class="product-price">LKR 42,000.00</p>
+            <div class="product-rating">★★★★★ <span>(212)</span></div>
+            <p class="product-brand">Brand: <span>AMD</span></p>
+        </div>
+        <button class="cart-btn">🛒</button>
+    </div>
+
+    <div class="product-card">
+        <div class="img2">
+            <img src="graphiccard.png" alt="Graphics Card">
+        </div>
+        <div class="hover-info">
+            <p class="product-title">NVIDIA RTX 3060 12GB</p>
+            <p class="product-price">LKR 125,000.00</p>
+            <div class="product-rating">★★★★☆ <span>(175)</span></div>
+            <p class="product-brand">Brand: <span>NVIDIA</span></p>
+        </div>
+        <button class="cart-btn">🛒</button>
+    </div>
+
+    <div class="product-card">
+        <div class="img2">
+            <img src="ssd.png" alt="SSD">
+        </div>
+        <div class="hover-info">
+            <p class="product-title">Samsung 980 Pro NVMe SSD 1TB</p>
+            <p class="product-price">LKR 29,999.00</p>
+            <div class="product-rating">★★★★★ <span>(320)</span></div>
+            <p class="product-brand">Brand: <span>Samsung</span></p>
+        </div>
+        <button class="cart-btn">🛒</button>
+    </div>
+
+    <div class="product-card">
+        <div class="img2">
+            <img src="ram.png" alt="RAM">
+        </div>
+        <div class="hover-info">
+            <p class="product-title">Corsair Vengeance 16GB DDR4 3200MHz</p>
+            <p class="product-price">LKR 15,800.00</p>
+            <div class="product-rating">★★★★☆ <span>(198)</span></div>
+            <p class="product-brand">Brand: <span>Corsair</span></p>
+        </div>
+        <button class="cart-btn">🛒</button>
+    </div>
+
+    <div class="product-card">
+        <div class="img2">
+            <img src="motherboard.png" alt="Motherboard">
+        </div>
+        <div class="hover-info">
+            <p class="product-title">MSI B550 TOMAHAWK Motherboard</p>
+            <p class="product-price">LKR 46,500.00</p>
+            <div class="product-rating">★★★★★ <span>(150)</span></div>
+            <p class="product-brand">Brand: <span>MSI</span></p>
+        </div>
+        <button class="cart-btn">🛒</button>
+    </div>
+
+</body>
+</html>
