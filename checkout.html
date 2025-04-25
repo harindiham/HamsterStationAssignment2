@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Gaming Hardware Store</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script src="checkout.js"></script>
+</head>
+<body>
+
+
+    <ul class="left-menu">
+        <li>
+            <a class="active" href="index.html"><img src="logo.png" alt="Home" class="icon1"></a>
+            <span class="tooltip">Profile</span>
+        </li>
+        <li>
+            <a href="index.html"><img src="home-icon.png" alt="Home" class="icon2"></a>
+            <span class="tooltip">Home</span>
+        </li>
+        <li>
+            <a href="page3.html"><img src="message.png" alt="Home" class="icon3"></a>
+            <span class="tooltip">Queries</span>
+        </li>
+        <li>
+
+            <a href="page3.html"><img src="FA&Q.png" alt="Home" class="icon4"></a>
+            <span class="tooltip">FAQ</span>
+        </li>
+        <li>
+
+            <a href="page5.html"><img src="games.png" alt="Home" class="icon5"></a>
+            <span class="tooltip">Games</span>
+        </li>
+        <li>
+            <a href="page6.html"><img src="pc.png" alt="Home" class="icon6"></a>
+            <span class="tooltip"> Consoles and Gaming Peripherals</span>
+        </li>
+        <li>
+
+            <a href="#about"><img src="plus.png" alt="Home" class="icon7"></a>
+            <span class="tooltip">more</span>
+        </li>
+    </ul>
+
+    <ul class="right-menu">
+
+        <li>
+            <a href="city.html"><img src="pfp.png" alt="Home" class="icon8"></a>
+            <span class="tooltipright"> Your profile</span>
+        </li>
+        <li>
+
+            <a href="#about"><img src="friends.png" alt="Home" class="icon9"></a>
+            <span class="tooltipright">Friends</span>
+        </li>
+
+    </ul>
+
+    <ul class="rightdown-menu">
+
+        <li>
+            <a href="checkout.html"><img src="cart.png" alt="Home" class="icon10"></a>
+            <span class="tooltipright"> Cart</span>
+        </li>
+        <li>
+
+            <a href="#about"><img src="sales.png" alt="Home" class="icon11"></a>
+            <span class="tooltipright">Sales</span>
+        </li>
+
+    </ul>
+    <header>
+        <!-- Your existing header navigation -->
+        <nav>
+            <ul class="left-menu">
+                <li>
+                    <a class="active" href="index1.html"><img src="logo.png" alt="Home" class="icon1"></a>
+                </li>
+                <!-- Other nav items -->
+            </ul>
+        </nav>
+    </header>
+
+    <main class="checkout-container">
+        <!-- Order Summary Section -->
+        <section class="order-summary">
+            <h2 class="section-title">Order Summary</h2>
+            <div id="checkoutItems"></div>
+            <div class="order-total">
+                Total: <span id="checkoutTotal">LKR 0.00</span>
+            </div>
+        </section>
+
+        <!-- Customer Information Section -->
+        <section class="customer-info">
+            <h2 class="section-title">Customer Information</h2>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Select payment method</option>
+                        <option value="credit_card">Credit Card</option>
+                        <option value="debit_card">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cash_on_delivery">Cash on Delivery</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Order Notes (Optional)</label>
+                    <textarea id="notes" name="notes" rows="2"></textarea>
+                </div>
+
+                <button type="submit" class="submit-order-btn">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
